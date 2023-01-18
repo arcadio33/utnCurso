@@ -1,0 +1,126 @@
+header {
+  background-color: #393E8F;
+  padding: .4em
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 100;
+  display: inline-block;
+  position: relative;
+  bottom: .8em;
+  margin: 0;
+}
+
+.holder img {
+  width: 5%;
+
+   
+
+}
+
+footer {
+  background-color: #393E8F;
+  clear: both;
+  color: #333;
+  padding: 3em 0;
+  margin-top: 10em;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  font-style: bold;
+  text-align: center;
+  margin:0;
+}
+
+.row {
+  align-content: center;
+  width: 100%;
+
+}
+
+.tablanovedades {
+  width: 80%;
+  text-align: left;
+  justify-content: center;
+  margin-left: 10%;
+
+
+}
+
+.btn-success {
+  margin-left: 10%;
+  margin-bottom: 1rem
+}
+
+.btn-primary {
+  display: right;
+}
+
+.btn-danger {
+  margin-top: 1rem;
+}
+
+
+.navbar {
+  display: flex;
+
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: right;
+}
+nav {
+  background-color: #F3CC64;
+  
+
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-weight: 700;
+
+  
+  
+}
+
+nav ul li {
+  display:inline-block;
+  width:12%;
+  
+  
+  
+}
+
+nav ul li a {
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.2em 0.4em;
+  display: block;
+  position: relative;
+
+}
+
+nav ul li a:hover {
+  background:rgba(255, 152, 34, 0.3);
+  border-radius: 10px
+}
+
+nav ul li a.activo {
+  background:#4c76a5;
+}
+

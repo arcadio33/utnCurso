@@ -1,0 +1,60 @@
+     <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="./novedades">NOVEDADES</a></li>
+                <li><a href="./cursos">CURSOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div>
+    <p class="text-end"> Usuario: {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión</a></p>
+
+   <div>
+    <div class="col">
+        <h3>Listado de Cursos</h3>
+       <div class="col-6 text-right"></div>
+          <hr>
+       <a href="/admin/cursos/agregarcurso" class="btn btn-success"> <i class="fa fa-plus"></i> Nuevo</a>
+    </div>
+   </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="tablanovedades"table>
+            <thead class=""thead-dark>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Detalles</th>
+                    <th scope="col">Fecha de Inicio</th>   
+                    <th scope="col">Fecha de Cierre</th>   
+                </tr>
+            </thead>
+            <tbody>
+                {{#each cursos}}
+                <tr>  
+                    <th scope="{{id}}">{{id}}</th>
+                    <td>{{nombre}}</td>
+                    <td>{{detalles}}</td>
+                    <td>{{fecha_inicio}}</td>
+                    <td>{{fecha_hasta}}</td>
+                    <td class="text-center">
+                        <a href="/admin/cursos/modificarcursos/{{id}}" title="Editar" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-pencil"></i></a>
+                        <a href="/admin/cursos/eliminarcursos/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+     </div>  
+  </div> 
+   <hr>
+
+
+<div class="botonver" >
+<a href="/admin/novedades" class="btn btn-primary"></i>VER NOVEDADES</a>
+</div>

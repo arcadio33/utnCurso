@@ -1,0 +1,59 @@
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="./novedades">NOVEDADES</a></li>
+                <li><a href="./cursos">CURSOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div>
+    <p class="text-end"> Usuario: {{usuario}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar sesión</a></p>
+
+   <div>
+    <div class="col">
+        <h3>Eventos y Novedades</h3>
+       <div class="col-6 text-right"></div>
+         <hr>
+       <a href="/admin/novedades/agregar" class="btn btn-success"> <i class="fa fa-plus"></i> Nuevo</a>
+    </div>
+   </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="tablanovedades"table>
+            <thead class=""thead-dark>
+                <tr>
+                    <th scope="col">#id</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Detalle</th>   
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each novedades}}
+                <tr>  
+                    <th scope="row">{{id}}</th>
+                    <td>{{titulo}}</td>
+                    <td>{{subtitulo}}</td>
+                    <td>{{cuerpo}}</td>
+                    <td>{{{imagen}}}</td>
+                    <td class="text-center">
+                        <a href="/admin/novedades/modificar/{{id}}" title="Editar" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-pencil"></i></a>
+                        <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+     </div>
+</div>
+<hr>
+
+<div class="botonver" >
+<a href="/admin/cursos" class="btn btn-primary"></i>VER CURSOS</a>
+</div>

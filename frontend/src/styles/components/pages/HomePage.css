@@ -1,0 +1,159 @@
+.homeimg {
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+
+.bienvenidos, .testimonios {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.bienvenidos {
+    width: 100%;
+    font-size: 1em;
+    float:none;
+    padding: 2em;
+    background-color: #df8b3d;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px
+}
+
+.cursos {
+    width: 29%;
+    display: inline-block;
+    padding: 1em;
+
+}
+
+
+.cursos {
+    background-color: rgb(218, 218, 218);
+    margin: 2px;
+    border-radius: 3px
+  }
+  
+  .cursos:hover {
+    color: white;
+    background-color: #df8b3d;
+    transition: transform .7s;
+    transform: scale(1.06);
+    z-index: -1
+  }
+  .cursos img {
+    width: 100%
+  }
+  
+  .cursos h1 {
+    float: left;
+    font-size: 16px;  
+  }
+  
+  #check {
+    background-color: #df8b3d;
+    padding: 2rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer
+  
+  }
+  
+  #check:hover {
+    background-color: #b16a28;
+  }
+
+
+
+.box
+{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    transition: .5s;
+    margin-bottom: 35px;
+   
+}
+
+.box:hover
+{
+    transform: scale(1.03);
+    z-index: 1;
+    box-shadow: 0 50px 50x rgba(0,0,0,.5);
+}
+
+.box .imgbox
+{
+    position: relative;
+}
+
+.box .imgbox img
+{
+    transition: .5s;
+}
+
+.box:hover .imgbox img
+{
+   opacity: .5;
+   
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+    
+}
+
+.box:hover .content
+{
+    opacity: 1;
+    bottom: 0;
+}
+
+.box .content h3
+{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.box .content p
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.box img {
+    width: 100%;
+    
+}
+
+.box a {
+    text-decoration: none
+}
+
+.mainpageflex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+

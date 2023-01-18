@@ -1,0 +1,49 @@
+nav {
+    background-color: #F3CC64;
+    margin-bottom: 2em;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+
+    
+   
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 50%
+    
+    
+}
+
+nav ul li {
+    display:inline-block;
+    width:12%;
+    
+    
+    
+}
+
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2em 0.4em;
+    display: block;
+    position: relative;
+
+}
+
+nav ul li a:hover {
+    background:rgba(255, 152, 34, 0.3);
+
+}
+
+nav ul li a.activo {
+    background: #d17f32;
+}
+
