@@ -56,10 +56,6 @@ const CurrentCursos = (props) => {
                     </div>
                 </div>
             </div>
-
-
-
-
         </main>
 
 

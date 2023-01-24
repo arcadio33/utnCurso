@@ -5,27 +5,13 @@ nav {
 
 nav li {
     list-style: none;
-    display: inline-block;
-
-    
-   
 }
 
 nav ul {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    margin-left: 50%
-    
-    
-}
-
-nav ul li {
-    display:inline-block;
-    width:12%;
-    
-    
-    
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: right;
 }
 
 nav ul li a {
@@ -35,7 +21,8 @@ nav ul li a {
     padding: 0.2em 0.4em;
     display: block;
     position: relative;
-
+    margin: 0 2rem;
+    line-height: 100%;
 }
 
 nav ul li a:hover {
@@ -45,5 +32,6 @@ nav ul li a:hover {
 
 nav ul li a.activo {
     background: #d17f32;
+    height: 100%;
 }
 

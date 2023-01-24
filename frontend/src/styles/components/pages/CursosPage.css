@@ -5,13 +5,13 @@
      border-radius: 8px;
      margin-top: 1em;
      margin-bottom: 1em;
+     text-align: center;
 }
 
 .seccioncursos {
     display:flex;
     justify-content: space-between
 }
-
 
 
 .onoff {

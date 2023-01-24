@@ -22,46 +22,66 @@
     margin-bottom: 10px
 }
 
-.cursos {
+.bienvenidos p{
+    margin: 1rem 0;
+}
+
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.curso {
     width: 29%;
     display: inline-block;
     padding: 1em;
 
 }
 
-
-.cursos {
+.curso {
     background-color: rgb(218, 218, 218);
-    margin: 2px;
+    margin: 1rem;
     border-radius: 3px
   }
   
-  .cursos:hover {
-    color: white;
-    background-color: #df8b3d;
-    transition: transform .7s;
-    transform: scale(1.06);
-    z-index: -1
-  }
-  .cursos img {
+  
+  .curso img {
     width: 100%
   }
   
-  .cursos h1 {
+  .curso h1 {
     float: left;
     font-size: 16px;  
   }
   
-  #check {
+  .eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .eventos h3{
+    padding: 0 4rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .contact {
     background-color: #df8b3d;
-    padding: 2rem;
-    border-radius: 20px;
-    border: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
     color: white;
     font-size: 16px;
     width: 100%;
-    cursor: pointer
-  
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 2rem 0 0 0;
   }
   
   #check:hover {
@@ -73,15 +93,13 @@
 .box
 {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 400px;
-    /* overflow: hidden; */
     border-radius: 10px;
     background: #000;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     transition: .5s;
-    margin-bottom: 35px;
-   
+    margin: 2rem 0;
 }
 
 .box:hover
@@ -89,6 +107,10 @@
     transform: scale(1.03);
     z-index: 1;
     box-shadow: 0 50px 50x rgba(0,0,0,.5);
+}
+
+.imgbox{
+    height: 100%;
 }
 
 .box .imgbox
@@ -99,6 +121,7 @@
 .box .imgbox img
 {
     transition: .5s;
+    height: 100%;
 }
 
 .box:hover .imgbox img
@@ -139,10 +162,16 @@
     font-weight: 400;
 }
 
+.content a{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
 
-.box img {
+.imgbox img {
     width: 100%;
-    
+    height: 100%;
+    border-radius: 10px;
 }
 
 .box a {
@@ -151,9 +180,16 @@
 
 .mainpageflex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+}
 
+#online{
+    padding: 1rem 4rem;
+}
+
+#online h3{
+    text-align: center;
 }
 
 

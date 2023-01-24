@@ -8,9 +8,7 @@ import Footer from './components/layout/Footer';
 import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
 import CursosPage from './pages/CursosPage';
-import ProximosCursos from "./pages/ProximosCursos";
 import NovedadesPage from './pages/NovedadesPage';
-import EnConstruccion from "./pages/EnConstruccion";
 
 
 function App() {
@@ -25,7 +23,6 @@ function App() {
             <Route path="cursos" element={<CursosPage />} />
             <Route path="novedades" element={<NovedadesPage />} />
             <Route path="contacto" element={<ContactoPage />} />
-            <Route path="enconstruccion" element={<EnConstruccion />} />
           </Routes>
         </BrowserRouter>
 
